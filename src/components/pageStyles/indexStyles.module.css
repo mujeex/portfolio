@@ -6,3 +6,11 @@
     height: 90vh;
     border: 1px solid black
 }
+
+intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
