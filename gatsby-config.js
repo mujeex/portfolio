@@ -1,3 +1,9 @@
+const dotenv= require('dotenv')
+
+if(process.env.NODE_ENV !== 'production'){
+  dotenv.config()
+}
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -6,6 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
@@ -43,6 +50,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options:{
+        spaceId:`yshhld8c2yn7`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
+    },
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

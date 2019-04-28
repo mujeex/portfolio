@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "/Users/apple/Documents/Documents/Vscode/React"
+		},
+		{
+			"path": "/Users/apple/Documents/Documents/Vscode/Github/JS-GAMES"
+		},
+		{
+			"path": "/Users/apple/Documents/Documents/Vscode/Github/Gatsby"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "JS-GAMES"
+	}
+}
