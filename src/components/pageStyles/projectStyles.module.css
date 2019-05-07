@@ -1,0 +1,31 @@
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.projectContainer{
+    width: 90%;
+    height: 12rem;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black
+}
+
+.projectName{
+    font-size: 40px;
+}
+
+.projectNumber{
+    height:100%;
+    width: 20%;
+    font-size: 80px;
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0
+}
