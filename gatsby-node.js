@@ -51,6 +51,23 @@ exports.createPages=({graphql,actions})=>{
     }) .then(resolve)
     }) 
 
+    // exports.createPages=({graphql,actions})=>{
+    //     const {createPage}=actions
+    
+    //     const blogPost= path.resolve('./src/components/blogComponents/blog-post.js')
+    //     return new Promise((resolve,reject)=>{
+    //         graphql(`
+    //         {
+    //             allContentfulBlog{
+    //                 edges{
+    //                   node{
+    //                     slug
+    //                   }
+    //                 }
+    //               }
+    //         }
+    //     `)
+
 
 
   

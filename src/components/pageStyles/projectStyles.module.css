@@ -8,11 +8,12 @@
 }
 
 .projectContainer{
-    width: 90%;
-    height: 12rem;
+    width: 85%;
+    height: 13rem;
     display: flex;
     justify-content: space-around;
-    border: 1px solid black
+    border: 1px solid black;
+    text-decoration: none;
 }
 
 .projectName{
