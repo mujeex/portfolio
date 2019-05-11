@@ -8,16 +8,19 @@ const project=({data})=>(
     <div className={styles.projectsContainer}>
 
     {data.allContentfulProjects.edges.map(({node})=>(
-        <Link className={styles.projectContainer}>
-        {/* <article > */}
+        <article key={node.id}>
+             <Link to={node.slug} className={styles.projectContainer}>
+
             <p className={styles.projectName}>{node.projectName}</p>
             <div>
                 <p>{node.niche}</p>
                 <p>{node.siteType}</p>
             </div>
             <div className={styles.projectNumber}>1</div>
-        {/* </article> */}
+
         </Link>
+        </article>
+       
     ))}
     
     

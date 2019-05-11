@@ -49,28 +49,48 @@ exports.createPages=({graphql,actions})=>{
         })
     
     }) .then(resolve)
-    }) 
+    }) }
 
-    // exports.createPages=({graphql,actions})=>{
-    //     const {createPage}=actions
+    //creating pages for projects
+
+
+    exports.createPages=({graphql,actions})=>{
+        const {createPage}=actions
     
-    //     const blogPost= path.resolve('./src/components/blogComponents/blog-post.js')
-    //     return new Promise((resolve,reject)=>{
-    //         graphql(`
-    //         {
-    //             allContentfulBlog{
-    //                 edges{
-    //                   node{
-    //                     slug
-    //                   }
-    //                 }
-    //               }
-    //         }
-    //     `)
+        const projectPage= path.resolve('./src/components/projectComponents/project.js')
+        return new Promise((resolve,reject)=>{
+            graphql(`
+            {
+                allContentfulProjects{
+                    edges{
+                        node{
+                            slug
+                          }
+                    }
+                    
+                  }
+            }
+        `).then(results=>{
+            if(results.error){
+                reject(results.error)
+            }
 
+            projects= results.data.allContentfulProjects.edges
 
+            projects.forEach(project=>{
+                createPage({
+                    path:`/${project.node.slug}`,
+                    component:projectPage ,
+                    context:{
+                        slug:project.node.slug,
+                        // previous,
+                        // next
+                    } 
+                })
+            })
 
-  
+          }).then(resolve)
+        
+        }) 
       
-
-}
+    }
