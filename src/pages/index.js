@@ -7,10 +7,27 @@ import styles from '../components/pageStyles/indexStyles.module.css'
 const homePage = () => (
   <Layout>
     <section className={styles.container}>
-    <div className={styles.intro}>
-      <p>Hello</p>
-      <p>My name is Mujahid Bappai, a front-end engineer and a creative procrastinator</p>
-    </div>
+      <header className={styles.header}>
+        <h1>
+          <span>w</span>
+          <span>e</span>
+          <span>b</span>
+          {/* <span className={styles.empty}></span> */}
+          <span>d</span>
+          <span>e</span>
+          <span>v</span>
+          <span>e</span>
+          <span>l</span>
+          <span>o</span>
+          <span>p</span>
+          <span>e</span>
+          <span>r</span>
+
+        </h1>
+      </header>
+      <div className={styles.intro}>
+        <p></p>
+      </div>
     </section>
   </Layout>
 )
