@@ -10,16 +10,17 @@ const path= require('path')
 exports.createPages=({graphql,actions})=>{
     const {createPage}=actions
 
-    const blogPost= path.resolve('./src/components/blogComponents/blog-post.js')
+    const projectPage= path.resolve('./src/components/projectComponents/project.js')
+    
     return new Promise((resolve,reject)=>{
         graphql(`
         {
-            allContentfulBlog{
+              allContentfulProjects{
                 edges{
-                  node{
-                    slug
-                  }
-                }
+                    node{
+                        slug
+                      }
+                }   
               }
         }
     `).then(results=>{
@@ -27,70 +28,27 @@ exports.createPages=({graphql,actions})=>{
         if(results.error){
             reject(results.error)
         }
-          // create blog post pages
-    const posts=results.data.allContentfulBlog.edges
-    // console.log(post)
+        //create project pages
 
-    posts.forEach((post,index)=>{
-        console.log(`showing slugs: ${post.node.slug}`)
-        // const previous= index === posts.length-1?null: posts[index+1].node
-        // const next= index === 0?null: posts[index-1].node
+        projects= results.data.allContentfulProjects.edges
 
-       createPage({
-            path:`/${post.node.slug}`,
-            component:blogPost ,
-            context:{
-                slug:post.node.slug,
-                // previous,
-                // next
-            } 
+        projects.forEach(project=>{
+            createPage({
+                path:`/${project.node.slug}`,
+                component:projectPage ,
+                context:{
+                    slug:project.node.slug,
+                 
+                } 
+            })
         })
 
-        })
     
     }) .then(resolve)
     }) }
 
-    //creating pages for projects
 
 
-    exports.createPages=({graphql,actions})=>{
-        const {createPage}=actions
-    
-        const projectPage= path.resolve('./src/components/projectComponents/project.js')
-        return new Promise((resolve,reject)=>{
-            graphql(`
-            {
-                allContentfulProjects{
-                    edges{
-                        node{
-                            slug
-                          }
-                    }
-                    
-                  }
-            }
-        `).then(results=>{
-            if(results.error){
-                reject(results.error)
-            }
+  
 
-            projects= results.data.allContentfulProjects.edges
-
-            projects.forEach(project=>{
-                createPage({
-                    path:`/${project.node.slug}`,
-                    component:projectPage ,
-                    context:{
-                        slug:project.node.slug,
-                        // previous,
-                        // next
-                    } 
-                })
-            })
-
-          }).then(resolve)
-        
-        }) 
-      
-    }
+   

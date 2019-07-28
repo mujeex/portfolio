@@ -17,12 +17,7 @@ const Layout=({children})=>{
        <header className={styles.header}>
       <div className={styles.logo}><Link to='/'>Homelogo</Link></div>
       <nav className={styles.navigation}>
-        {/* <ul className={styles.navContainer}> */}
-          <Link to='/projects'>project</Link>
-          <Link to='blog'>blog</Link>
-          <Link to='/aboutPage'>about me!</Link>
-          <Link to='/contact'>contact</Link>
-        {/* </ul> */}
+        
       </nav>
     </header>
     <main>
