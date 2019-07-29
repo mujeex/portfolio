@@ -39,10 +39,7 @@ module.exports = {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
+          
           {
             family: `Open Sans`,
             variants: [`400`, `700`]
@@ -52,12 +49,12 @@ module.exports = {
           variants: [`400`, `700`]
         },
         {
-          family: `Roboto`,
+          family: `Work Sans`,
           variants: [`400`, `700`]
         },
         {
-          family: `Work Sans`,
-          variants: [`400`, `700`]
+          family: `Saira Condensed`,
+          variants: [`400`, `600`,`700`]
         },
         ],
       },

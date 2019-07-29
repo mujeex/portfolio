@@ -5,7 +5,7 @@
     /* border: 1px solid black */
 }
 .header{
-    width: 95%;
+    width: 100%;
     /* border:1px solid; */
     box-sizing: border-box;
     margin: 10px auto;
@@ -15,20 +15,23 @@
 
 .header h1{
     font-size: 5vw;
-    line-height: 2.2em;
+    line-height: 2.1em;
     width: 100% !important;
-    padding:0;
+    /* padding:0; */
     text-transform: uppercase;
-    font-family: 'Ubuntu';
+    font-family: 'Saira Condensed';
     display: inline-block;
-    font-weight: 900
+    font-weight: 900;
+    position: relative;
+
 }
  .header h1>span{
      display: inline-block;
-     width: .7em;
+     width: .8em;
      margin: 0;
      color:white;
-     padding: 3px
+     padding: 3px;
+     font-size: 2.1ex;
  }
 
  
@@ -44,8 +47,9 @@
 }
 
 .header h1>span:nth-child(4){
-    /* width: .32em;  */
+    width: .62em; 
     color:transparent;
+    background-color: transparent;
 }
 .intro{
     display: flex;
@@ -53,7 +57,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 4vw auto;
+    margin: 2vw auto;
     font-family:'Work Sans';
 }
 .intro h3{
@@ -61,14 +65,32 @@
     line-height: 1.4em;
     font-weight: 500;
     word-spacing: 0px;
-    opacity: .8;
+    opacity: .75;
 }
+.link:nth-child(odd){
+    background: #e24b3b;
+}
+.link:nth-child(even){
+    background-color: #a93629e6;
+}
+.link {
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    width: 1em;
+    letter-spacing: -6px;
+    text-align: center;
+    word-break: unset;
+    font-size: 5.4vw
+}
+
+
 @media screen and (min-width:320px){
     .intro{
         width: 85%;
     }
     .header h1>span{
-        width: .85em;
+        width: .93em;
     }
 }
 @media screen and (min-width:500px){
@@ -78,9 +100,7 @@
         margin: 0
     }
     .intro{
-    
         width: 80%;
-        margin: 100px auto;
     }
     .intro h3{
         font-size: 1.5em;
@@ -90,13 +110,19 @@
         word-break: normal;
         word-wrap: unset
     }
+    .link:hover>.link:nth-child(odd){
+        transform: scale(.7) skewY(-15deg);
+    }
+    
+    .link:hover .link:nth-child(even){
+        transform: scale(.7) skewY(15deg);
+    }
 
 }
 
 @media screen and (min-width:700px){
     .intro{
         width: 75%;
-        margin: 100px auto;
     }
     .intro h3{
         font-size: 1.67em;
@@ -107,7 +133,6 @@
 @media screen and (min-width:1000px){
     .intro{
         width: 70%;
-        margin: 100px auto;
     }
     .intro h3{
         font-size: 1.8em;
@@ -120,12 +145,18 @@
         width: 65%;
     }
     .header h1{
-        font-size: 4.5vw;
+        font-size: 4vw;
         line-height: 2em;
         
     }
+
     .header h1>span{
-        width: 0.9em
+        display: inline-block;
+        width: .92em;
+        margin: 0;
+        color:white;
+        padding: 2px;
+        font-size: 2.4ex;
     }
     .intro{
         width: 55%;
@@ -134,5 +165,10 @@
         font-size: 1.78em;
         line-height: 1.62em;
         word-spacing: -2px
+    }
+    .header h1>span:nth-child(4){
+        width: .62em; 
+        color:transparent;
+        background-color: transparent;
     }
 }
