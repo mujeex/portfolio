@@ -12,7 +12,7 @@ const homePage = () => (
           <span>w</span>
           <span>e</span>
           <span>b</span>
-          {/* <span className={styles.empty}></span> */}
+          <span className={styles.empty}> </span>
           <span>d</span>
           <span>e</span>
           <span>v</span>
@@ -22,11 +22,13 @@ const homePage = () => (
           <span>p</span>
           <span>e</span>
           <span>r</span>
-
         </h1>
       </header>
       <div className={styles.intro}>
-        <p></p>
+        <p>Hello! Mujahid Bappai here. I am a front-end engineer and a UX/UI engineer with deep
+          passion and curiosity towards web technology. I am currently working freelance. Some of my <span className={styles.innerLink}>projects</span> are available here along
+          with my <span className={styles.innerLink}>resume</span>. Feel free to  <span className={styles.innerLink}>reach out</span> to me at any time.
+        </p>
       </div>
     </section>
   </Layout>

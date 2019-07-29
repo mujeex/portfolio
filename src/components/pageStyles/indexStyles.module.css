@@ -1,12 +1,12 @@
 .container{
     /* display: flex; */
     width: 100%;
-    height: 90vh;
-    border: 1px solid black
+    height: 80vh;
+    /* border: 1px solid black */
 }
 .header{
     width: 95%;
-    border:1px solid;
+    /* border:1px solid; */
     box-sizing: border-box;
     margin: 20px auto;
     text-align: center;
@@ -17,7 +17,8 @@
     font-size: 1em;
     width: 100% !important;
     padding:0;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-family: 'Ubuntu'
 }
  .header h1>span{
      /* border: 1px solid black; */
@@ -25,18 +26,15 @@
      justify-content:center;
      align-items: center;
      width: 4.4vw;
-     text-align: center;
      padding: 1vw;
-     margin: 0
+     margin: 0;
+     color:white;
+     height: 40px;
+     font-size: 1.6em;
+    line-height: 2em;
  }
 
- .header h1>span{
-     color:white;
-    height: 40px;
-    font-size: 1.1em;
-    line-height: 2em;
-    font-stretch: expanded
- }
+ 
  .header h1>span:nth-child(even){
      transform: scale(1) skewY(-15deg);
      background-color: #a93629e6;
@@ -47,22 +45,85 @@
 }
 
 .empty{
-    width: .32em;
-    display: inline-block;
+    /* width: .32em; */
+    /* display: inline-block; */
 }
 .intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 90%;
+    margin: 5vw auto;
+    font-family:'Work Sans';
 }
-
-@media screen and (min-width:600px){
+.intro p{
+    font-size: 1.3em;
+    line-height: 1.4em;
+    font-weight: 500;
+    word-spacing: 0px
+}
+@media screen and (min-width:320px){
+    .intro{
+        width: 85%;
+    }
+}
+@media screen and (min-width:500px){
     .header h1>span{
         width: 4vw;
         text-align: center;
         padding: .3vw;
         margin: 0
+    }
+    .intro{
+    
+        width: 80%;
+        margin: 100px auto;
+    }
+    .intro p{
+        font-size: 1.5em;
+        line-height: 1.34em;
+        text-align: justify;
+        word-spacing: 0px;
+        word-break: normal;
+        word-wrap: unset
+    }
+
+}
+
+@media screen and (min-width:700px){
+    .intro{
+        width: 75%;
+        margin: 100px auto;
+    }
+    .intro p{
+        font-size: 1.67em;
+        line-height: 1.4em;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .intro{
+        width: 70%;
+        margin: 100px auto;
+    }
+    .intro p{
+        font-size: 1.8em;
+        line-height: 1.4em;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .header{
+        width: 65%;
+    }
+    .intro{
+        width: 60%;
+        margin: 100px auto;
+    }
+    .intro p{
+        font-size: 1.82em;
+        line-height: 1.67em;
+        word-spacing: -2px
     }
 }

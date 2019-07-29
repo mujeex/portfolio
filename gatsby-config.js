@@ -47,6 +47,18 @@ module.exports = {
             family: `Open Sans`,
             variants: [`400`, `700`]
           },
+          {
+          family: `Ubuntu`,
+          variants: [`400`, `700`]
+        },
+        {
+          family: `Roboto`,
+          variants: [`400`, `700`]
+        },
+        {
+          family: `Work Sans`,
+          variants: [`400`, `700`]
+        },
         ],
       },
     },
