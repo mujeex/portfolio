@@ -8,45 +8,44 @@
     width: 95%;
     /* border:1px solid; */
     box-sizing: border-box;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     padding: 0
 }
 
 .header h1{
-    font-size: 1em;
+    font-size: 5vw;
+    line-height: 2.2em;
     width: 100% !important;
     padding:0;
     text-transform: uppercase;
-    font-family: 'Ubuntu'
+    font-family: 'Ubuntu';
+    display: inline-block;
+    font-weight: 900
 }
  .header h1>span{
-     /* border: 1px solid black; */
-     display: inline-flex;
-     justify-content:center;
-     align-items: center;
-     width: 4.4vw;
-     padding: 1vw;
+     display: inline-block;
+     width: .7em;
      margin: 0;
      color:white;
-     height: 40px;
-     font-size: 1.6em;
-    line-height: 2em;
+     padding: 3px
  }
 
  
  .header h1>span:nth-child(even){
      transform: scale(1) skewY(-15deg);
      background-color: #a93629e6;
+     background-size: 175%
  }
  .header h1>span:nth-child(odd){
     transform: scale(1) skewY(15deg);
     background-color: #e24b3b;
+    background-size: 175%
 }
 
-.empty{
-    /* width: .32em; */
-    /* display: inline-block; */
+.header h1>span:nth-child(4){
+    /* width: .32em;  */
+    color:transparent;
 }
 .intro{
     display: flex;
@@ -54,23 +53,26 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 5vw auto;
+    margin: 4vw auto;
     font-family:'Work Sans';
 }
-.intro p{
-    font-size: 1.3em;
+.intro h3{
+    font-size: 1.45em;
     line-height: 1.4em;
     font-weight: 500;
-    word-spacing: 0px
+    word-spacing: 0px;
+    opacity: .8;
 }
 @media screen and (min-width:320px){
     .intro{
         width: 85%;
     }
+    .header h1>span{
+        width: .85em;
+    }
 }
 @media screen and (min-width:500px){
     .header h1>span{
-        width: 4vw;
         text-align: center;
         padding: .3vw;
         margin: 0
@@ -80,10 +82,10 @@
         width: 80%;
         margin: 100px auto;
     }
-    .intro p{
+    .intro h3{
         font-size: 1.5em;
         line-height: 1.34em;
-        text-align: justify;
+        /* text-align: justify; */
         word-spacing: 0px;
         word-break: normal;
         word-wrap: unset
@@ -96,7 +98,7 @@
         width: 75%;
         margin: 100px auto;
     }
-    .intro p{
+    .intro h3{
         font-size: 1.67em;
         line-height: 1.4em;
     }
@@ -107,7 +109,7 @@
         width: 70%;
         margin: 100px auto;
     }
-    .intro p{
+    .intro h3{
         font-size: 1.8em;
         line-height: 1.4em;
     }
@@ -117,13 +119,20 @@
     .header{
         width: 65%;
     }
-    .intro{
-        width: 60%;
-        margin: 100px auto;
+    .header h1{
+        font-size: 4.5vw;
+        line-height: 2em;
+        
     }
-    .intro p{
-        font-size: 1.82em;
-        line-height: 1.67em;
+    .header h1>span{
+        width: 0.9em
+    }
+    .intro{
+        width: 55%;
+    }
+    .intro h3{
+        font-size: 1.78em;
+        line-height: 1.62em;
         word-spacing: -2px
     }
 }
