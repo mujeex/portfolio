@@ -1,21 +1,12 @@
 .header{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     display:flex;
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid black; */
 }
 
-.logo{
-    width: 30%;
-    height: 100%;
-    margin-left: 20px;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 
 .navigation{
     width: 70%;
@@ -26,5 +17,88 @@
     justify-content: space-around;
     align-items: center;
 }
+.logo{
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo div{
+    height: 90%;
+    widows: 50%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.svg{
+    width: 80px;
+    height: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   cursor: pointer;
+}
+
+.svg:hover .github{
+    opacity: 1;
+    transform: scale(1.2)
+}
+.github{
+    /* fill: ; */
+    opacity: .5;
+    width: 60%;
+    height: 60%;
+    transition: all .2s ease-in;
+    /* text-align: center */
+}
+
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    z-index: 100;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-size: 4vw;
+}
+.resume:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.2) skewY(-15deg);
+    transition: transform .3s ease-in;
+    background-color: red;
+    z-index: -1;
+    transform-origin: center;
+    opacity: .5;
+}
+
+.resume:hover:before{
+    transform: skewY(0deg);
+    opacity: 1;
+}
 
 
+
+@media screen and (min-width:500px){
+    .navigation{
+        justify-content: flex-end;
+    }
+    .svg{
+        width: 80px;
+        height: 100%;
+        margin-right: 3vw;
+       
+    }
+    .resume{
+        margin-right: 4vw;
+       
+    }
+}
