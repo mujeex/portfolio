@@ -7,6 +7,8 @@ const project=({data})=>(
     <Layout>
     <div className={styles.projectsContainer}>
 
+    {/* {data.allContentfulPr} */}
+
     {/* {data.allContentfulProjects.edges.map(({node})=>(
         <article key={node.id}>
              <Link to={node.slug} className={styles.projectContainer}>
@@ -25,7 +27,7 @@ const project=({data})=>(
         <figure className={styles.thumbnail} >
             <image></image>
         </figure>
-        <Link className={styles.details}>
+        <Link to={data.allContentfulProjects.edges[0].node.slug} className={styles.details}>
         <div>
             <h3>Fluffy Dreams</h3>
             <h4>React-Native, Javascript</h4>

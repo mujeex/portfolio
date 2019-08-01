@@ -27,7 +27,7 @@ const Layout=({children})=>{
       <div><Link to='resume'>resume</Link></div>
       </nav>
     </header>
-    <main style={{width:'100vw',display: 'flex',flexDirection: 'column',justifyContent:'center'}}>
+    <main style={{width:'100vw',display: 'flex',flexDirection: 'column',justifyContent:'center',padding:'30px 0',}}>
       {children}
     </main>
     </div>

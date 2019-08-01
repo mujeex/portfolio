@@ -1,7 +1,8 @@
 import React from 'react'
-import {graphql} from 'gatsby'
+import {graphql,Link} from 'gatsby'
 import styles from './project.module.css'
 import Layout from '../layout'
+import Button from '../sharedComp/button/button'
 
 const projectPage= ({data})=>{
 
@@ -9,32 +10,22 @@ const projectPage= ({data})=>{
     return(
         <Layout>
              <div className={styles.container}>
-             <figure className={styles.projectPhotos}><figcaption>my picture goes here</figcaption></figure>
-             <article className={styles.projectStory}>
-             <div className={styles.storyHeader}>
-             <h2>Story</h2>
-             </div>
-               <div className={styles.storyContainer}>
-               <p>{contents.story.story}</p>
-               </div>
-                
-             </article>
-            <article className={styles.projectDetails}>
-            <h2>Details</h2>
-            <ul>
-                <li>role: {contents.role}</li>
-                <li>stack: {contents.stack}</li>
-                <li>niche: {contents.niche}</li>
-                <li>status: {contents.status}</li>
-                <li>client: {contents.client}</li>
-            </ul>
+            <Button>
+                <div className={styles.back}>
+                <Link className={styles.link} to='/projects'>{`< Back to Projects`}</Link>
+                </div>
+            </Button>
+             <h1>{contents.projectName}</h1>
+             <p>{contents.story.story}</p>
+             <h2>Technical Stack</h2>
+             <ul>
+                {contents.techStack.list.map(stack=>(<li key={Math.random()}>{stack}</li>))}
+             </ul>
             <div className={styles.buttonsContainer}>
-            <button><a href='www.github.com'>github</a></button>
-            <button><a href="www.github.com">Launch Site!</a></button>
+            <Button><a href='www.github.com'>github</a></Button>
+            <Button><a href="www.github.com">Launch Site!</a></Button>
             </div>
-            
-            </article>
-        </div>
+            </div>
         </Layout>
        
     )
@@ -44,8 +35,11 @@ export default projectPage
 export const query= graphql`
 query($slug: String!){
     contentfulProjects (slug:{eq: $slug}){
+        projectName
         role
-       stack
+       techStack{
+           list
+       }
        client
        niche
        github

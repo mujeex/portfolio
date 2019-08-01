@@ -37,12 +37,12 @@
  
  .header h1>span:nth-child(even){
      transform: scale(1) skewY(-15deg);
-     background-color: #a93629e6;
+     background-color: var(--primary-color);
      background-size: 175%
  }
  .header h1>span:nth-child(odd){
     transform: scale(1) skewY(15deg);
-    background-color: #e24b3b;
+    background-color: var(--primaryLight);
     background-size: 175%
 }
 
@@ -58,7 +58,7 @@
     align-items: center;
     width: 90%;
     margin: 2vw auto;
-    font-family:'Work Sans';
+    font-family:var(--primaryFont);
 }
 .intro h3{
     font-size: 1.45em;
