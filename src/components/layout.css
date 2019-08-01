@@ -6,6 +6,21 @@ html,body{
     margin:0;
 
 }
+::-webkit-scrollbar {
+    width: 0px;
+  }
+:root{
+    --primary-color: #a93629e6;
+    --primaryLight:#e24b3b;
+    --background: beige;
+    --wrapper-padding: 4vw;
+    --primaryFont:'Work Sans';
+    --secondaryFont:'';
+    --linkColor:'';
+    --linkFont:''
+    /* --secondary-color:
+    --secondaryLight: */
+}
 body{
     font-size: 106%;
 }
@@ -14,15 +29,22 @@ body{
     body{
         font-size: 112%
     }
+    
 }
 @media screen and (min-width:800px){
     body{
         font-size: 140%
     }
+    :root{
+        --wrapper-padding: 6vw;
+    }
 }
 @media screen and (min-width:1200px){
     body{
         font-size: 156%
+    }
+    :root{
+        --wrapper-padding: 6.5vw;
     }
 }
 @media screen and (min-width:1400px){

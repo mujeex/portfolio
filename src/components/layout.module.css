@@ -4,6 +4,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     /* border: 1px solid black; */
 }
 
@@ -11,11 +12,13 @@
 .navigation{
     width: 70%;
     height:100%;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     /* border: 1px solid black; */
     display:flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    /* border: 1px solid; */
 }
 .logo{
     width: 30%;
@@ -28,9 +31,10 @@
 }
 .logo div{
     height: 90%;
-    widows: 50%;
+    width: 50%;
     border-radius: 50%;
     border: 1px solid black;
+    padding: 18px
 }
 
 .svg{
@@ -88,6 +92,9 @@
 
 
 @media screen and (min-width:500px){
+    .header{
+        flex-direction: row;
+    }
     .navigation{
         justify-content: flex-end;
     }

@@ -7,11 +7,10 @@ const project=({data})=>(
     <Layout>
     <div className={styles.projectsContainer}>
 
-    {data.allContentfulProjects.edges.map(({node})=>(
+    {/* {data.allContentfulProjects.edges.map(({node})=>(
         <article key={node.id}>
              <Link to={node.slug} className={styles.projectContainer}>
 
-            <p className={styles.projectName}>{node.projectName}</p>
             <div>
                 <p>{node.niche}</p>
                 <p>{node.siteType}</p>
@@ -21,8 +20,63 @@ const project=({data})=>(
         </Link>
         </article>
        
-    ))}
-    
+    ))} */}
+       <article  className={styles.projectContainer}>
+        <figure className={styles.thumbnail} >
+            <image></image>
+        </figure>
+        <Link className={styles.details}>
+        <div>
+            <h3>Fluffy Dreams</h3>
+            <h4>React-Native, Javascript</h4>
+            <p>An e-commerce application that gives users the best possible options.</p>
+        </div>
+        </Link>
+        </article>
+        <article  className={styles.projectContainer}>
+        <figure className={styles.thumbnail} >
+            <image></image>
+        </figure>
+        <Link className={styles.details}>
+        <div>
+        <p>e-commerce</p>
+        <p>landing page</p>
+        </div>
+        </Link>
+        </article>
+        <article  className={styles.projectContainer}>
+        <figure className={styles.thumbnail} >
+            <image></image>
+        </figure>
+        <Link className={styles.details}>
+        <div>
+        <p>e-commerce</p>
+        <p>landing page</p>
+        </div>
+        </Link>
+        </article>
+        <article  className={styles.projectContainer}>
+        <figure className={styles.thumbnail} >
+            <image></image>
+        </figure>
+        <Link className={styles.details}>
+        <div>
+        <p>e-commerce</p>
+        <p>landing page</p>
+        </div>
+        </Link>
+        </article>
+        <article  className={styles.projectContainer}>
+        <figure className={styles.thumbnail} >
+            <image></image>
+        </figure>
+        <Link className={styles.details}>
+        <div>
+        <p>e-commerce</p>
+        <p>landing page</p>
+        </div>
+        </Link>
+        </article>
     
 
     </div>

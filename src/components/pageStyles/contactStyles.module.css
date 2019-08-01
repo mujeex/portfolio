@@ -1,0 +1,22 @@
+.contact_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 var(--wrapper-padding);
+    height: 85vh;
+}
+
+.contact_content{
+    display: flex;
+    /* align-self: center; */
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid;
+}
+
+.contact_content h2{
+    opacity: .7
+}
