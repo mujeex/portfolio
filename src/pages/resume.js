@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import styles from '../components/pageStyles/resumeStyles.module.css'
+import Button from '../components/sharedComp/button/button'
 import {graphql}from 'gatsby'
 
 
@@ -18,6 +19,10 @@ const resume=({data})=>{
 <ul>
     {data.skills.content.map(skill=>(<li key={Math.random()}>{skill}</li>))}
 </ul>
+<h2>{data.education.heading}</h2>
+<ul>
+  {data.education.content.map(edu=>(<li key={Math.random()}>{edu}</li>))}
+</ul>
 
 <h2>{data.work.heading}</h2>
 <ul>
@@ -33,7 +38,7 @@ const resume=({data})=>{
 <ul>
     {data.honors.content.map(honor=>(<li key={Math.random()}>{honor}</li>))}
 </ul>
-
+<Button>Download PDF</Button>
 </div>
     </Layout>
    
@@ -64,6 +69,10 @@ export const query=graphql`
         honors{
             heading
             content
+        }
+        education{
+          heading
+          content
         }
       }
     }

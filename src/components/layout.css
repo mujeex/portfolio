@@ -42,7 +42,8 @@ a{
 }
 
 p{
-    color: var(--primaryFont-color)
+    color: var(--primaryFont-color);
+    line-height: 1.3em;
 }
 
 @media screen and (min-width:600px){
