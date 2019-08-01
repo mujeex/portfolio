@@ -1,0 +1,9 @@
+.resume_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 0 var(--wrapper-padding);
+}

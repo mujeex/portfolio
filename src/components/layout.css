@@ -24,6 +24,12 @@ html,body{
 body{
     font-size: 106%;
 }
+li{
+    margin-bottom: 5px;
+}
+h1,h2,h3{
+    opacity: .7
+}
 
 @media screen and (min-width:600px){
     body{
