@@ -18,6 +18,8 @@
 
 .link{
     text-decoration: none;
+    font-family: 'Saira Condensed';
+    text-transform: capitalize
 }
 .back{
     /* width:  */

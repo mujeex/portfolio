@@ -16,15 +16,10 @@ const Layout=({children})=>{
   return(
     <div>
        <header className={styles.header}>
-      <div className={styles.logo}><Link to='/'><div>j</div></Link></div>
-     
       <nav className={styles.navigation}>
-      {/* <div className={styles.svg}><Github/></div> */}
-      {/* <div className={styles.resume}>resume</div> */}
-      <div><Link to='/'>Home</Link></div>
       <div><Link to='projects'>Projects</Link></div>
-      <div><Link to='contact'>Contact</Link></div>
-      <div><Link to='resume'>resume</Link></div>
+      <div className={styles.logo}><Link to='/'><div></div></Link></div>
+      <div><Link to='contact'> Contact</Link></div>
       </nav>
     </header>
     <main style={{width:'100vw',display: 'flex',flexDirection: 'column',justifyContent:'center',padding:'30px 0',}}>

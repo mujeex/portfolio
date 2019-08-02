@@ -7,3 +7,8 @@
     max-width: 750px;
     padding: 0 var(--wrapper-padding);
 }
+
+
+.pdf{
+    font-family: var(--secondaryFont)
+}

@@ -26,8 +26,8 @@ const homePage = () => (
       </header>
       <div className={styles.intro}>
         <h3>Hello! Mujahid Bappai here. I am a front-end engineer and a UX/UI engineer with deep
-          passion and curiosity towards the web technology. I am currently working freelance. Some of my  
-           <span className={styles.link}>p</span>
+          passion and curiosity towards the web technology. I am currently working freelance. Some of my   
+           <span className={styles.link}> p</span>
           <span className={styles.link}>r</span>
           <span className={styles.link}>o</span>
           <span className={styles.link}>j</span>
@@ -35,7 +35,7 @@ const homePage = () => (
           <span className={styles.link}>c</span>
           <span className={styles.link}>t</span>
           <span className={styles.link}>s</span> 
-           are available here along
+          are available here along
           with my <span className={styles.link}>r</span>
           <span className={styles.link}>e</span>
           <span className={styles.link}>s</span>
