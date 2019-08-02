@@ -60,6 +60,7 @@
     width: 90%;
     margin: 2vw auto;
     font-family:var(--primaryFont);
+    max-width: 800px
 }
 .intro h3{
     font-size: 1.45em;
@@ -135,6 +136,7 @@
 @media screen and (min-width:1000px){
     .intro{
         width: 70%;
+
     }
     .intro h3{
         font-size: 1.8em;

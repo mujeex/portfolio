@@ -12,7 +12,7 @@ const resume=({data})=>{
     <Layout>
  <div className={styles.resume_container}>
  <h1>{data.intro.heading}</h1>
-<p><b>{data.intro.content}</b>
+<p>{data.intro.content}
 </p>
 
 <h2>{data.skills.heading}</h2>

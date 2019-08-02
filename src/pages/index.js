@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import styles from '../components/pageStyles/indexStyles.module.css'
@@ -26,30 +26,15 @@ const homePage = () => (
       </header>
       <div className={styles.intro}>
         <h3>Hello! Mujahid Bappai here. I am a front-end engineer and a UX/UI engineer with deep
-          passion and curiosity towards the web technology. I am currently working freelance. Some of my   
-           <span className={styles.link}> p</span>
-          <span className={styles.link}>r</span>
-          <span className={styles.link}>o</span>
-          <span className={styles.link}>j</span>
-          <span className={styles.link}>e</span>
-          <span className={styles.link}>c</span>
-          <span className={styles.link}>t</span>
-          <span className={styles.link}>s</span> 
+          passion and curiosity towards the web technology. I am currently working freelance. Some of my project   
           are available here along
-          with my <span className={styles.link}>r</span>
+          with my <Link to='/resume'> <span className={styles.link}>r</span>
           <span className={styles.link}>e</span>
           <span className={styles.link}>s</span>
           <span className={styles.link}>u</span>
           <span className={styles.link}>m</span>
-          <span className={styles.link}>e</span>. 
-          Feel free to  <span className={styles.link}>c</span>
-          <span className={styles.link}>o</span>
-          <span className={styles.link}>n</span>
-          <span className={styles.link}>t</span>
-          <span className={styles.link}>a</span>
-          <span className={styles.link}>c</span>
-          <span className={styles.link}>t</span>
-           to me at any time.
+          <span className={styles.link}>e</span>. </Link> 
+          Feel free to contact to me at any time.
         </h3>
       </div>
     </section>

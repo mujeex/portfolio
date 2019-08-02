@@ -10,8 +10,10 @@ html,body{
     width: 0px;
   }
 :root{
-    --primary-color: #a93629e6;
+    --primary-color: #f5505d;
     --primaryLight:#e24b3b;
+    --secondary-color:#23486a;
+    --accent-color:'';
     --background: beige;
     --wrapper-padding: 4vw;
     --primaryFont:'Work Sans';

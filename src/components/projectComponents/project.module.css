@@ -18,17 +18,34 @@
 
 .link{
     text-decoration: none;
-    font-family: 'Saira Condensed';
-    text-transform: capitalize
+   
 }
 .back{
     /* width:  */
     /* border: 1px solid; */
     margin: 0
 }
+.sLink{
+    font-family: var(--secondaryFont);
+    text-transform: capitalize
+}
+.niche{
+    display: flex;
+    align-items: center;
+}
+.niche p{
+    /* border:1px solid; */
+    margin-left: 6px;
+    margin-top: 23.7px
+}
 
 @media screen and (min-width:800px){
     .container{
        margin: 0 auto;
+    }
+    .niche p{
+        /* border:1px solid; */
+        margin-left: 6px;
+        margin-top: 26.2px
     }
 }

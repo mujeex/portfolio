@@ -16,7 +16,7 @@
 .navigation{
     height:100%;
     /* margin-right: 20px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display:flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
     /* border: 1px solid; */
 }
 .navigation div{
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
     margin: 0 15px
 }
@@ -34,16 +34,37 @@
     height: 100%;
     /* margin-left: 20px; */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    /* max-width: 120px; */
+    /* overflow: hidden */
 }
-.logo div{
+/* .logo div{
     height: 90%;
-    /* width: 50%; */
+    width: 50%;
     border-radius: 50%;
     border: 1px solid black;
     padding: 18px;
+    display: flex;
+    flex-direction: column;
+    
     background-color: black;
+} */
+
+.logo h4{
+    margin: 0;
+    /* color:yellow */
+}
+.logo h4:nth-child(1){
+    border-bottom: 2px solid red;
+}
+
+.logo h4:nth-child(2){
+    /* border: 1px solid; */
+    margin-left: 4px;
+
 }
 /* 
 .svg{

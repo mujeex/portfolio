@@ -18,7 +18,7 @@ const Layout=({children})=>{
        <header className={styles.header}>
       <nav className={styles.navigation}>
       <div><Link to='projects'>Projects</Link></div>
-      <div className={styles.logo}><Link to='/'><div></div></Link></div>
+      <div className={styles.logo}><Link to='/'><h4>Mujahid</h4><h4>Bappai</h4></Link></div>
       <div><Link to='contact'> Contact</Link></div>
       </nav>
     </header>

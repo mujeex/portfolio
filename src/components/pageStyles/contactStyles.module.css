@@ -4,7 +4,7 @@
     flex-direction: column;
     /* border: 1px solid; */
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 700px;
     padding: 0 var(--wrapper-padding);
     height: 85vh;
 }
@@ -14,7 +14,6 @@
     /* align-self: center; */
     flex-direction: column;
     width: 100%;
-    /* border: 1px solid; */
 }
 
 .contact_content h2{

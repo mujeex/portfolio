@@ -7,80 +7,21 @@ const project=({data})=>(
     <Layout>
     <div className={styles.projectsContainer}>
 
-    {/* {data.allContentfulPr} */}
-
-    {/* {data.allContentfulProjects.edges.map(({node})=>(
-        <article key={node.id}>
-             <Link to={node.slug} className={styles.projectContainer}>
-
-            <div>
-                <p>{node.niche}</p>
-                <p>{node.siteType}</p>
-            </div>
-            <div className={styles.projectNumber}>1</div>
-
-        </Link>
-        </article>
-       
-    ))} */}
-       <article  className={styles.projectContainer}>
-        <figure className={styles.thumbnail} >
-            <image></image>
-        </figure>
-        <Link to={data.allContentfulProjects.edges[0].node.slug} className={styles.details}>
-        <div>
-            <h3>Fluffy Dreams</h3>
-            <h4>React-Native, Javascript</h4>
-            <p>An e-commerce application that gives users the best possible options.</p>
-        </div>
-        </Link>
-        </article>
-        <article  className={styles.projectContainer}>
-        <figure className={styles.thumbnail} >
-            <image></image>
-        </figure>
-        <Link className={styles.details}>
-        <div>
-        <p>e-commerce</p>
-        <p>landing page</p>
-        </div>
-        </Link>
-        </article>
-        <article  className={styles.projectContainer}>
-        <figure className={styles.thumbnail} >
-            <image></image>
-        </figure>
-        <Link className={styles.details}>
-        <div>
-        <p>e-commerce</p>
-        <p>landing page</p>
-        </div>
-        </Link>
-        </article>
-        <article  className={styles.projectContainer}>
-        <figure className={styles.thumbnail} >
-            <image></image>
-        </figure>
-        <Link className={styles.details}>
-        <div>
-        <p>e-commerce</p>
-        <p>landing page</p>
-        </div>
-        </Link>
-        </article>
-        <article  className={styles.projectContainer}>
-        <figure className={styles.thumbnail} >
-            <image></image>
-        </figure>
-        <Link className={styles.details}>
-        <div>
-        <p>e-commerce</p>
-        <p>landing page</p>
-        </div>
-        </Link>
-        </article>
-    
-
+    {data.allContentfulProjects.edges.map(({node})=>(
+ <article  className={styles.projectContainer}>
+ <figure className={styles.thumbnail} >
+     <image></image>
+ </figure>
+ <Link to={node.slug} className={styles.details}>
+ <div>
+     <h3>{node.projectName}</h3>
+     <h4>{node.stack}</h4>
+     <p>An e-commerce application that gives users the best possible options.</p>
+ </div>
+ </Link>
+ </article>
+    ))}
+          
     </div>
     </Layout>
    
@@ -93,11 +34,12 @@ query{
     allContentfulProjects{
         edges{
             node{
-                niche
+             niche
              siteType
              projectName
              slug
              id
+             stack
            }
         }
        

@@ -17,13 +17,18 @@ const projectPage= ({data})=>{
             </Button>
              <h1>{contents.projectName}</h1>
              <p>{contents.story.story}</p>
+             <div className={styles.niche}>
+             <h2>Niche: </h2>
+             <p>{contents.niche}</p>
+             </div>
+            
              <h2>Technical Stack</h2>
              <ul>
                 {contents.techStack.list.map(stack=>(<li key={Math.random()}>{stack}</li>))}
              </ul>
             <div className={styles.buttonsContainer}>
-            <Button><a href='www.github.com'>github</a></Button>
-            <Button><a href="www.github.com">Launch Site!</a></Button>
+            <Button><a className={styles.sLink} href='www.github.com'>github</a></Button>
+            <Button><a className={styles.sLink}  href="www.github.com">Launch Site!</a></Button>
             </div>
             </div>
         </Layout>
