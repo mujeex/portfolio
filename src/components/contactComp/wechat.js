@@ -2,9 +2,9 @@ import React from 'react'
 import styles from './wechat.module.css'
 import Button from '../sharedComp/button/button'
 
-const modal=({wechatId})=>(
+const modal=({wechatId,onToggle})=>(
     <article className={styles.modal}>
-        <Button>Back</Button>
+        <Button click={onToggle}>Back</Button>
         <div className={styles.modal_content}>
             <figure className={styles.modal_content__image}> 
                 <image className={styles.image} alt='wechatBar' src='../../images/barcode.JPG'></image>

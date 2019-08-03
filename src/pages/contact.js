@@ -7,17 +7,20 @@ import Modal from '../components/contactComp/wechat'
 const contact=({data})=>{
 
     const [modal,setModal]=useState(false)
-    
+    const toggleModal=(event)=>{
+        event.preventDefault()
+        setModal(!modal)
+    }
     const infos= data.contentfulContact
     return(
     <Layout>
          <div className={styles.contact_container}>
-        <Modal wechatId={infos.wechatId}/>
+       { modal?<Modal wechatId={infos.wechatId} onToggle={toggleModal}/>:null}
          <div className={styles.contact_content}>
             <h2>Hit me up if you ever have anything you want to talk about.</h2>
             <ul><li><a target='_blank' href={`${infos.facebookLink}`}>Facebook</a></li>
             <li><a target='_blank' href={`${infos.githubLink}`}>Github</a></li>
-            <li><a  href="">Wechat</a></li>
+            <li onClick={toggleModal}><a  href="">Wechat</a></li>
             </ul>
          </div>
     </div>
