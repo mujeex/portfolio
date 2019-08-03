@@ -15,6 +15,7 @@
     padding:30px 0;
     /* background: var(--background) */
     background-color: white;
+    position: relative;
 }
 
 

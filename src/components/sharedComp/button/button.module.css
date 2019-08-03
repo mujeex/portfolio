@@ -7,5 +7,6 @@
     align-items: center;
     margin-left: 10px;
     box-sizing: content-box;
-    width: 220px
+    width: 220px;
+    font-family: var(--secondaryFont)
 }
