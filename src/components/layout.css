@@ -10,11 +10,13 @@ html,body{
     width: 0px;
   }
 :root{
-    --primary-color: #f5505d;
+    /* --primary-color: #2b3252; */
+    --primary-color:#031465;
     --primaryLight:#e24b3b;
-    --secondary-color:#23486a;
-    --accent-color:'';
-    --background: beige;
+    --secondary-color:#ef5455;
+    --accent-color:#fad743;
+    --background: var(--secondary-color);
+    --background-light:'';
     --wrapper-padding: 4vw;
     --primaryFont:'Work Sans';
     --primaryFont-color:'';
@@ -32,10 +34,12 @@ li{
 }
 h2,h3{
     opacity: .7;
-    font-family: var(--primaryFont)
+    font-family: var(--primaryFont);
+ color: var(--primary-color)
 }
 h1{
     margin-top:.5em;
+    color: var(--primary-color)
 }
 a{
     text-decoration: none;
@@ -43,6 +47,9 @@ a{
     color: var(--linkColor);
     /* font-family: 'Saira Condensed'; */
     /* text-transform: capitalize */
+}
+a:hover{
+    cursor: pointer;
 }
 
 p{

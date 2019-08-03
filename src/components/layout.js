@@ -22,7 +22,7 @@ const Layout=({children})=>{
       <div><Link to='contact'> Contact</Link></div>
       </nav>
     </header>
-    <main style={{width:'100vw',display: 'flex',flexDirection: 'column',justifyContent:'center',padding:'30px 0',}}>
+    <main className={styles.main}>
       {children}
     </main>
     </div>

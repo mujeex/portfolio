@@ -12,7 +12,7 @@ const homePage = () => (
           <span>w</span>
           <span>e</span>
           <span>b</span>
-          <span className={styles.empty}>j </span>
+          <span className={styles.empty}>k </span>
           <span>d</span>
           <span>e</span>
           <span>v</span>

@@ -8,18 +8,18 @@ const project=({data})=>(
     <div className={styles.projectsContainer}>
 
     {data.allContentfulProjects.edges.map(({node})=>(
+ <Link to={node.slug} className={styles.details}>
  <article  className={styles.projectContainer}>
  <figure className={styles.thumbnail} >
      <image></image>
  </figure>
- <Link to={node.slug} className={styles.details}>
  <div>
      <h3>{node.projectName}</h3>
      <h4>{node.stack}</h4>
      <p>An e-commerce application that gives users the best possible options.</p>
  </div>
- </Link>
  </article>
+ </Link>
     ))}
           
     </div>

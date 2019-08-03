@@ -5,7 +5,7 @@
     align-items: center;
     /* border:1px solid; */
     padding: var(--wrapper-padding);
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto
 }
 
@@ -22,7 +22,12 @@
     width: 100%;
     background-color: red;
     height: 18em;
-    margin: 0
+    margin: 0;
+    transition: transform .3s ease-in-out;
+    transform: scale(1)
+}
+.thumbnail:hover{
+    transform: scale(1.02)
 }
 .details{
 text-decoration: none;
@@ -45,7 +50,7 @@ text-decoration: none;
         padding:1vw
     }
     .projectContainer{
-        width: 40%;
+        width: 43%;
         /* height: 13rem; */
         display: flex;
         justify-content: space-around;
