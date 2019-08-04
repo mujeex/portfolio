@@ -28,12 +28,7 @@ const homePage = () => (
         <h3>Hello! Mujahid Bappai here. I am a front-end engineer and a UX/UI engineer with deep
           passion and curiosity towards the web technology. I am currently working freelance. Some of my project   
           are available here along
-          with my <Link to='/resume'> <span className={styles.link}>r</span>
-          <span className={styles.link}>e</span>
-          <span className={styles.link}>s</span>
-          <span className={styles.link}>u</span>
-          <span className={styles.link}>m</span>
-          <span className={styles.link}>e</span>. </Link> 
+          with my <Link to='/resume'> <span className={styles.link}>resume </span></Link>. 
           Feel free to contact to me at any time.
         </h3>
       </div>

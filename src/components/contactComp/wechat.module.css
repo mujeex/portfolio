@@ -38,10 +38,11 @@
     border:1px solid;
     justify-content: center;
     align-items: center;
-    font-family: var(--secondaryFont)
+    font-family: var(--primaryFont)
 }
 .modal_content__id p{
     margin-left: 5px;
+    font-family: var(--primaryFont)
 }
 .button{
     display: flex;

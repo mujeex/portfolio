@@ -7,6 +7,9 @@
     max-width: 750px;
     padding: 0 var(--wrapper-padding);
 }
+.resume_container h1{
+    color:var(--secondary-color)
+}
 
 
 .pdf{

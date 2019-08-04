@@ -3,7 +3,7 @@
     width: 100%;
     /* height: 85vh; */
     /* background-color: var(--background) */
-    background-color: white;
+    /* background-color: var(--background); */
     /* border: 1px solid black */
 }
 .header{
@@ -63,12 +63,13 @@
     width: 90%;
     margin: 2vw auto;
     font-family:var(--primaryFont);
+    
     max-width: 800px
 }
 .intro h3{
     font-size: 1.45em;
     line-height: 1.4em;
-    font-weight: 500;
+    font-weight: 600;
     word-spacing: 0px;
     opacity: .75;
 }
@@ -80,15 +81,11 @@
 } */
 .link {
     cursor: pointer;
-    color: black;
     display: inline-block;
     /* width: 1em; */
     /* letter-spacing: -6px; */
     text-align: center;
-    /* word-break: unset; */
-    /* font-size: 5.4vw */
     border-bottom: 4px solid var(--accent-color);
-    font-family: var(--secondaryFont);
     font-weight: 700
 }
 

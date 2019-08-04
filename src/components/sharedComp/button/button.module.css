@@ -1,5 +1,5 @@
 .buttonContainer{
-    border: 2px solid;
+    border: 2px solid var(--primary-color);
     border-radius: 2px;
     padding:5px;
     display: flex;
@@ -8,5 +8,6 @@
     margin-left: 10px;
     box-sizing: content-box;
     width: 220px;
-    font-family: var(--secondaryFont)
+    font-family: var(--secondaryFont);
+    color:var(--secondary-color)
 }

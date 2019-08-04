@@ -16,6 +16,7 @@ const projectPage= ({data})=>{
                 </div>
             </Button>
              <h1>{contents.projectName}</h1>
+             <h2>Story</h2>
              <p>{contents.story.story}</p>
              <div className={styles.niche}>
              <h2>Niche: </h2>

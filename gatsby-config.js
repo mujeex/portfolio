@@ -1,6 +1,6 @@
 const dotenv= require('dotenv')
 
-if(process.env.NODE_ENV !== 'production'){
+if(process.env.NODE_ENV === 'production'){
   dotenv.config()
 }
 
@@ -50,11 +50,15 @@ module.exports = {
         },
         {
           family: `Work Sans`,
-          variants: [`400`, `700`]
+          variants: [`200`,`300`,`400`,`700`]
         },
         {
           family: `Saira Condensed`,
           variants: [`400`, `600`,`700`]
+        },
+        {
+          family: `Lekton`,
+          variants: [`100`,`200`,`300`,`400`, `600`,`700`]
         },
         ],
       },
