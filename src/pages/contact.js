@@ -12,10 +12,11 @@ const contact=({data})=>{
         setModal(!modal)
     }
     const infos= data.contentfulContact
+    const image=infos.wechat.fluid
     return(
     <Layout>
          <div className={styles.contact_container}>
-       { modal?<Modal wechatId={infos.wechatId} onToggle={toggleModal}/>:null}
+       { modal?<Modal imageFluid={image} wechatId={infos.wechatId} onToggle={toggleModal}/>:null}
          <div className={styles.contact_content}>
             <h2>Hit me up if you ever have anything you want to talk about.</h2>
             <ul><li><a target='_blank' href={`${infos.facebookLink}`}>Facebook</a></li>
@@ -34,5 +35,10 @@ export const query=graphql`
     contentfulContact{
         githubLink
         wechatId
+        wechat {
+          fluid {
+          ...GatsbyContentfulFluid
+          }
+        }
       }
 }`
