@@ -57,7 +57,7 @@ a:hover{
 p,li{
     color: var(--primary-color);
     line-height: 1.3em;
-    font-weight: 200;
+    font-weight: 300;
     font-family: var(--secondaryFont)
 }
 

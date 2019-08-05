@@ -9,5 +9,10 @@
     box-sizing: content-box;
     width: 220px;
     font-family: var(--secondaryFont);
-    color:var(--secondary-color)
+    color:var(--secondary-color);
+    transition: background-color .3s ease-in-out
+}
+
+.buttonContainer:hover{
+    background-color: var(--primary-color);
 }
