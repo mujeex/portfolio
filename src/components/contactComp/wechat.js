@@ -1,13 +1,12 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import styles from './wechat.module.css'
-import Button from '../sharedComp/button/button'
+// import Button from '../sharedComp/button/button'
+import Modal from '../sharedComp/modal/modal'
+
 
 const modal=({imageFluid,wechatId,onToggle})=>(
-    <article className={styles.modal}>
-    <div className={styles.buttonContainer}>
-        <Button click={onToggle}>Back</Button>
-    </div>
+    <Modal onToggle={onToggle}>
         <div className={styles.modal_content}>
             <figure className={styles.modal_content__image}> 
                 <Img className={styles.image} fluid={imageFluid}/>
@@ -17,6 +16,6 @@ const modal=({imageFluid,wechatId,onToggle})=>(
             <p>{wechatId}</p>
             </div>
         </div>
-    </article>
+    </Modal>
 )
 export default modal
