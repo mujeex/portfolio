@@ -7,15 +7,19 @@ const contact=({onToggle})=>{
     return (
         <Modal onToggle={onToggle}>
         <div className={styles.formContainer}>
-            <form action="">
+            <form name='contact'
+                 method='post'
+                 data-netlify="true" 
+                 data-netlify-honeypot="bot-field">
+
             <fieldset className={styles.fieldset}>
                 <legend>email</legend>
-                <input className={styles.input} type="text"/>
+                <input className={styles.input} type="email" name='email'  placeholder='name@name.com'/>
             </fieldset>
 
                 <fieldset className={styles.fieldset}>
                 <legend>message</legend>
-                <textarea className={styles.textarea}  cols="30" rows="10"></textarea>
+                <textarea className={styles.textarea} placeholder='message...' name="textarea"   cols="30" rows="10"></textarea>
                 </fieldset>
                 <div className={styles.buttonContainer}>
                 <Button>Submit</Button>
