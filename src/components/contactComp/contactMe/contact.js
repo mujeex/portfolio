@@ -10,11 +10,12 @@ const contact=({onToggle})=>{
             <form name='contact'
                  method='post'
                  data-netlify="true" 
-                 data-netlify-honeypot="bot-field">
+                 data-netlify-honeypot="bot-field"
+                 >
 
             <fieldset className={styles.fieldset}>
                 <legend>email</legend>
-                <input className={styles.input} type="email" name='email'  placeholder='name@name.com'/>
+                <input className={styles.input} type="email" name='email'  placeholder='name@name.com' required/>
             </fieldset>
 
                 <fieldset className={styles.fieldset}>

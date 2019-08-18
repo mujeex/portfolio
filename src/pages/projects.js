@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import styles from '../components/pageStyles/projectStyles.module.css'
 import {Link,graphql} from 'gatsby'
+import Img from 'gatsby-image'
 
 const project=({data})=>(
     <Layout>
@@ -11,7 +12,7 @@ const project=({data})=>(
  <Link to={node.slug} className={styles.details}>
  <article  className={styles.projectContainer}>
  <figure className={styles.thumbnail} >
-     <image></image>
+     <Img fluid={node.thumbnail.fluid} className={styles.image}/>
  </figure>
  <div>
      <h3>{node.projectName}</h3>
@@ -40,8 +41,12 @@ query{
              slug
              id
              stack
+             thumbnail{
+                fluid{
+                    ...GatsbyContentfulFluid
+                }
            }
-        }
-       
+        } 
       }
+    }
 }`

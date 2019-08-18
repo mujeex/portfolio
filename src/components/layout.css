@@ -6,6 +6,9 @@ html,body{
     margin:0;
 
 }
+body{
+    background: var(--background)  url(../assets/bg.png)
+}
 ::-webkit-scrollbar {
     width: 0px;
   }
@@ -15,7 +18,7 @@ html,body{
     --primaryLight:#e24b3b;
     --secondary-color:#ef5455;
     --accent-color:#fad743;
-    --background: '#bfc3e0';
+    --background: #bfc3e0;
     --background-light:'';
     --wrapper-padding: 4vw;
     --primaryFont: 'Lekton';

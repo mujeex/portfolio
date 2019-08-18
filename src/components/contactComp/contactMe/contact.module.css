@@ -17,7 +17,8 @@
     width: 100%;
     height: 25px;
     outline: none;
-    border: none
+    border: none;
+    background: transparent
 }
 
 .textarea{
@@ -25,6 +26,7 @@
     /* height: 25px; */
     outline: none;
     border: none;
+    background: transparent
 }
 
 .buttonContainer{
