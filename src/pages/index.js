@@ -1,11 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
+import {Helmet} from 'react-helmet'
 
 import Layout from "../components/layout"
 import styles from '../components/pageStyles/indexStyles.module.css'
 
 const homePage = () => (
+    <>
   <Layout>
+    <Helmet>
+            {/* General tags */}
+            <title>{title}</title>
+            <meta name="description" content={description} />
+          </Helmet>
     <section className={styles.container}>
       <header className={styles.header}>
         <h1>
@@ -34,6 +41,7 @@ const homePage = () => (
       </div>
     </section>
   </Layout>
+  </>
 )
 
 export default homePage

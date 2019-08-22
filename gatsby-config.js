@@ -5,9 +5,9 @@ if(process.env.NODE_ENV === 'production'){
 };
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `A portfolio website for a front-end developer named Mujahid Bappai`,
+    description: `A website to host all my projects on front-end developer alongside my resume.`,
+    author: `Mujahid Bappai`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,10 +26,10 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/`,
+        start_url: `/https://thirsty-babbage-7ba1e6.netlify.com/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
      
@@ -70,9 +70,15 @@ module.exports = {
         downloadLocal: true,
       }
     },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en'
+      }
+    }
     
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
