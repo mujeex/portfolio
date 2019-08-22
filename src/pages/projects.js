@@ -41,6 +41,7 @@ query{
              slug
              id
              stack
+             description
              thumbnail{
                 fluid{
                     ...GatsbyContentfulFluid
