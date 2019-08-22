@@ -1,17 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link,graphql } from "gatsby"
 import {Helmet} from 'react-helmet'
 
 import Layout from "../components/layout"
 import styles from '../components/pageStyles/indexStyles.module.css'
 
-const homePage = () => (
+const homePage = ({data}) => (
     <>
   <Layout>
     <Helmet>
             {/* General tags */}
-            <title>{title}</title>
-            <meta name="description" content={description} />
+            <title>{data.site.siteMetaData.title}</title>
+            <meta name="description" content={data.site.siteMetaData.description} />
           </Helmet>
     <section className={styles.container}>
       <header className={styles.header}>
@@ -43,5 +43,14 @@ const homePage = () => (
   </Layout>
   </>
 )
-
+export const query=graphql`
+  {
+    site{
+      siteMetadata{
+        title
+        description
+      }
+    }
+  }
+`
 export default homePage
