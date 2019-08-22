@@ -19,15 +19,17 @@
 .thumbnail{
     width: 100%;
     background-color: red;
-    /* opacity: .3; */
+    opacity: .9;
     height: 18em;
     margin: 0;
     transition: transform .3s ease-in-out;
     transform: scale(1);
-    object-fit: scale-down
+    object-fit: scale-down;
 }
 .thumbnail:hover{
-    transform: scale(1.02)
+    transform: scale(1.02);
+    opacity:1;
+
 }
 .image{
     width: 100%;
@@ -44,12 +46,7 @@ text-decoration: none;
 .details h4{
     font-family: var(--primaryFont)
 }
-.thumbnail:nth-child(even){
-    /* clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%); */
-}
-.thumbnail:nth-child(odd){
-    /* clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);  */
-}
+
 
 
 

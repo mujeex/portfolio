@@ -17,7 +17,7 @@ const project=({data})=>(
  <div>
      <h3>{node.projectName}</h3>
      <h4>{node.stack}</h4>
-     <p>An e-commerce application that gives users the best possible options.</p>
+     <p>{node.description}</p>
  </div>
  </article>
  </Link>
