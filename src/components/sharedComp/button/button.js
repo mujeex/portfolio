@@ -5,7 +5,9 @@ import styles from './button.module.css'
 const button =({children,click,disable})=>{
 
     const classes=[styles.buttonContainer]
-    disable&&classes.push(styles.buttonInvalid)
+    if(disable===true){
+        classes.push(styles.buttonInvalid)
+    }
     return(
         <div onClick={click?click:null} className={classes.join(' ')}>
             {children}

@@ -27,7 +27,7 @@
     background: none;
 }
 .buttonInvalid:hover:after{
-    content: 'The is not avaialble at the moment';
+    content: 'Sorry! This is not avaialble at the moment 🤓';
     position: absolute;
     width:100%;
     height: 100%;
@@ -39,5 +39,6 @@
     align-items: center;
     background: var(--primary-color);
     text-align: center;
+    line-height: 12px
     /* opacity: .5; */
 }

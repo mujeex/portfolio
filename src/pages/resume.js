@@ -38,7 +38,6 @@ const resume=({data})=>{
 <ul>
     {data.honors.content.map(honor=>(<li key={Math.random()}>{honor}</li>))}
 </ul>
-<Button><a className={styles.pdf} href="#">Download PDF</a></Button>
 </div>
     </Layout>
    

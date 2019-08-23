@@ -28,8 +28,8 @@ const projectPage= ({data})=>{
                 {contents.techStack.list.map(stack=>(<li key={Math.random()}>{stack}</li>))}
              </ul>
             <div className={styles.buttonsContainer}>
-            <Button disable={contents.code}><a target="_blank" rel="noopener noreferrer" aria-label="github page for project" className={styles.sLink} href='www.github.com'>github</a></Button>
-            <Button disable={contents.website}><a target="_blank" rel="noopener noreferrer" aria-label="webpage for project" className={styles.sLink}  href="www.github.com">Launch Site!</a></Button>
+            <Button disable={contents.code}><a target="_blank" rel="noopener noreferrer" aria-label="github page for project" className={styles.sLink} href={contents.links.github}>github</a></Button>
+            <Button disable={contents.website}><a target="_blank" rel="noopener noreferrer" aria-label="webpage for project" className={styles.sLink}  href={contents.links.website}>Launch Site!</a></Button>
             </div>
             </div>
         </Layout>
@@ -48,9 +48,12 @@ query($slug: String!){
        }
        client
        niche
-       github
        code
        website
+       links{
+           github
+           website
+       }
        site
        story{
            story
