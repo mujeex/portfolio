@@ -5,18 +5,18 @@ import {Link,graphql} from 'gatsby'
 import Img from 'gatsby-image'
 
 const project=({data})=>(
-    <Layout>
+    <Layout >
     <div className={styles.projectsContainer}>
 
     {data.allContentfulProjects.edges.map(({node})=>(
- <Link to={node.slug} className={styles.details}>
- <article  className={styles.projectContainer}>
+ <Link  key={node.id} to={node.slug} className={styles.details}>
+ <article className={styles.projectContainer}  >
  <figure className={styles.thumbnail} >
      <Img fluid={node.thumbnail.fluid} className={styles.image}/>
  </figure>
  <div>
      <h3>{node.projectName}</h3>
-     <h4>{node.stack}</h4>
+     <h4>Niche: {node.niche}</h4>
      <p>{node.description}</p>
  </div>
  </article>
@@ -36,11 +36,9 @@ query{
         edges{
             node{
              niche
-             siteType
              projectName
              slug
              id
-             stack
              description
              thumbnail{
                 fluid{

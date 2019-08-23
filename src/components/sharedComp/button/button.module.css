@@ -16,3 +16,28 @@
 .buttonContainer:hover{
     background-color: var(--primary-color);
 }
+
+.buttonInvalid{
+    cursor: not-allowed;
+    opacity:.5;
+    position: relative;
+
+}
+.buttonInvalid:hover{
+    background: none;
+}
+.buttonInvalid:hover:after{
+    content: 'The is not avaialble at the moment';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    font-size: 12px;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    text-align: center;
+    /* opacity: .5; */
+}
