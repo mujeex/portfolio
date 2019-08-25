@@ -39,7 +39,7 @@ const HomePage = ({data}) => (
           Nothing gives me pleasure like creating something functional and operational out of nothing.
           I find the whole process very rewarding.
           <br/>
-          Feel free to <Link className={styles.link}>contact</Link> to me if you have any project or just to say hi 😁 .
+          Feel free to <Link to="/contacts" className={styles.link}>contact</Link> to me if you have any project or just to say hi 😁 .
         </h3>
       </div>
     </section>
