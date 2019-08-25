@@ -8,8 +8,9 @@ const contact=({onToggle})=>{
         <Modal onToggle={onToggle}>
         <div className={styles.formContainer}>
             <form name='contact'
-                 method='post'
-                 data-netlify="true" 
+                 method='POST'
+                 netlify 
+                 action='/thanks'
                  data-netlify-honeypot="bot-field"
                  >
 
