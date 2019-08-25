@@ -31,11 +31,15 @@ const HomePage = ({data}) => (
         </h1>
       </header>
       <div className={styles.intro}>
-        <h3>Hello! Mujahid Bappai here. I am a front-end engineer and a UX/UI engineer with deep
-          passion and curiosity towards the web technology. I am currently working freelance. Some of my project   
-          are available here along
-          with my <Link to='/resume'> <span className={styles.link}>resume </span></Link>. 
-          Feel free to contact to me at any time.
+        <h3>Hello! Mujahid Bappai here. I am a front-end engineer with deep
+          passion and curiosity towards the web technology. I am currently working freelance. All my relevant experiences  
+          both personal and professional can be found here in my
+           <Link to='/resume'> <span className={styles.link}>resume </span></Link>. 
+          <br/>
+          Nothing gives me pleasure like creating something functional and operational out of nothing.
+          I find the whole process very rewarding.
+          <br/>
+          Feel free to <Link className={styles.link}>contact</Link> to me if you have any project or just to say hi 😁 .
         </h3>
       </div>
     </section>
