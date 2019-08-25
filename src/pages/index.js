@@ -20,13 +20,12 @@ const HomePage = ({data}) => (
           <span>e</span>
           <span>b</span>
           <span className={styles.empty}>k </span>
-          <span>d</span>
           <span>e</span>
-          <span>v</span>
+          <span>n</span>
+          <span>g</span>
+          <span>i</span>
+          <span>n</span>
           <span>e</span>
-          <span>l</span>
-          <span>o</span>
-          <span>p</span>
           <span>e</span>
           <span>r</span>
         </h1>
