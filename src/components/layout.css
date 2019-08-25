@@ -61,7 +61,7 @@ p,li{
     color: var(--primary-color);
     line-height: 1.3em;
     font-weight: 300;
-    font-family: var(--secondaryFont)
+    font-family: var(--primaryFont)
 }
 
 @media screen and (min-width:600px){
