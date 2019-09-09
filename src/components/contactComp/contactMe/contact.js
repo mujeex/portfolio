@@ -9,11 +9,11 @@ const contact=({onToggle})=>{
         <div className={styles.formContainer}>
             <form name='contact'
                  method='POST'
-                 netlify 
-                 action='/thanks'
+                 data-netlify="true" 
                  data-netlify-honeypot="bot-field"
                  >
 
+             <input hidden name="bot-field" />        
             <fieldset className={styles.fieldset}>
                 <legend>email</legend>
                 <input className={styles.input} type="email" name='email'  placeholder='name@name.com' required/>
@@ -23,6 +23,7 @@ const contact=({onToggle})=>{
                 <legend>message</legend>
                 <textarea className={styles.textarea} placeholder='message...' name="textarea"   cols="30" rows="10"></textarea>
                 </fieldset>
+                
                 <div className={styles.buttonContainer}>
                 <Button>Submit</Button>
                 </div>
