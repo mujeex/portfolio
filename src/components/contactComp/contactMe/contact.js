@@ -23,9 +23,9 @@ const contact=({onToggle})=>{
                 <legend>message</legend>
                 <textarea className={styles.textarea} placeholder='message...' name="textarea"   cols="30" rows="10"></textarea>
                 </fieldset>
-                
+
                 <div className={styles.buttonContainer}>
-                <Button>Submit</Button>
+                <Button type='submit' rel="noopener noreferrer">Submit</Button>
                 </div>
 
             </form>

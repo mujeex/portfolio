@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import styles from '../components/pageStyles/resumeStyles.module.css'
-import Button from '../components/sharedComp/button/button'
 import {graphql}from 'gatsby'
 
 

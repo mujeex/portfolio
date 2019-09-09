@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './button.module.css'
 import styled,{css} from 'styled-components' 
 
 
@@ -22,6 +21,10 @@ transition: background-color .3s ease-in-out;
 cursor:pointer;
 &:active{
     transform: scale(0.99);
+};
+&:focus{
+    outline: 1px solid #fff;
+    outline-offset: -4px;
 };
 &:hover{
     background-color:${({disable})=>disable?'none': '#031465'};
@@ -54,10 +57,10 @@ ${({disable})=>{
 }}
 `
 
-const button =({children,click,disable})=>{
+const button =({children,click,disable,type})=>{
 
     return(
-            <StyledButton disable={disable} onClick={click}>
+            <StyledButton type={type?type:null} disable={disable} onClick={click}>
             {children}
             </StyledButton>
     )

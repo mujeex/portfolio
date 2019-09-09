@@ -31,9 +31,9 @@ const contact=({data})=>{
          <div className={styles.contact_content}>
             <h2>Hit me up if you ever have anything you want to talk about.</h2>
             <ul className={styles.contactLinks}>
-            <li><a target='_blank' href={`${infos.githubLink}`}>Github</a></li>
-            <li onClick={toggleWeChatModal}><a  href="">Wechat</a></li>
-            <li onClick={toggleEmailModal}><a  href="">Email</a></li>
+            <li><a target='_blank' rel="noopener noreferrer" href={`${infos.githubLink}`}>Github</a></li>
+            <li onClick={toggleWeChatModal}><a>Wechat</a></li>
+            <li onClick={toggleEmailModal}><a>Email</a></li>
             </ul>
          </div>
     </div>
