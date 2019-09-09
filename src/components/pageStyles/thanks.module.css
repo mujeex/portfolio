@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: center;
     width:100%;
-    max-width: 500px;
-    padding: 0 calc(100%-10px)
+    max-width: 520px;
+    padding: 0 calc(100%-10px);
+    margin: 0 auto;
 }
 .buttons{
     display: flex;

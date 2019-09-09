@@ -31,7 +31,7 @@ const contact=({data})=>{
                  method='POST'
                  data-netlify="true" 
                  data-netlify-honeypot="bot-field"
-                 action='/Thanks'
+                 action='/thanks'
                  >
 
              <input hidden name="bot-field" />        
@@ -53,7 +53,7 @@ const contact=({data})=>{
 
             <ul className={styles.contactLinks}>
             <li><a target='_blank' rel="noopener noreferrer" href={`${infos.githubLink}`}>Github</a></li>
-            <li onClick={toggleWeChatModal}><a>Wechat</a></li>
+            <li onClick={toggleWeChatModal}><a href='#'>Wechat</a></li>
             </ul>
          </div>
     </div>

@@ -7,9 +7,10 @@
 
 import React from "react"
 import {Link} from "gatsby"
+
 import "./layout.css"
 import styles from './layout.module.css'
-import Github from '../components/svgs/github/github'
+
 
 const Layout=({children})=>{
 

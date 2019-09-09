@@ -6,9 +6,9 @@ import Button from '../components/sharedComp/button/button'
 
 const Thanks=()=>(
         <div className={styles.container}>
-            <h2>Thank you for getting in touch, I will be sure to reply back to you 🙏</h2> 
+            <h2>Thank you for getting in touch, I will be sure to reply back to you <span aria-label='prayer hands' role='img'>🙏</span> </h2> 
         <div className={styles.buttons}>
-             <Button><Link to='/about'>Home</Link></Button>
+             <Button><Link to='/'>Home</Link></Button>
              <Button><Link to='/contact'>Back to Contacts</Link></Button>
         </div>
         </div>
