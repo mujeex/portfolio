@@ -4,7 +4,9 @@
     height:100vh;
     justify-content: center;
     align-items: center;
-    width:50%;
+    width:100%;
+    max-width: 500px;
+    padding: 0 calc(100%-10px)
 }
 .buttons{
     display: flex;
