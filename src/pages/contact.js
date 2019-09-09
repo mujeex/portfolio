@@ -6,17 +6,11 @@ import styleForm from '../components/contactComp/contactMe/contact.module.css'
 import Layout from '../components/layout'
 import WechatModal from '../components/contactComp/wechat'
 import Button from '../components/sharedComp/button/button'
-import EmailModal from '../components/contactComp/contactMe/contact'
 
 const contact=({data})=>{
 
     const [weChatmodal,setweChatModal]=useState(false)
-    const [emailModal,setemailModal]=useState(false)
 
-    const toggleEmailModal=(event)=>{
-        event.preventDefault()
-        setemailModal(!emailModal)
-    }
 
     const toggleWeChatModal=(event)=>{
         event.preventDefault()
@@ -30,7 +24,6 @@ const contact=({data})=>{
     <Layout>
          <div className={styles.contact_container}>
        { weChatmodal?<WechatModal imageFluid={image} wechatId={infos.wechatId} onToggle={toggleWeChatModal}/>:null}
-       {/* {emailModal?<EmailModal onToggle={toggleEmailModal}/>:null} */}
          <div className={styles.contact_content}>
             <h2>Hit me up if you ever have anything you want to talk about.</h2>
             
