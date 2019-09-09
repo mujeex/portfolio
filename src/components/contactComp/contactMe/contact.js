@@ -15,17 +15,17 @@ const contact=({onToggle})=>{
 
              <input hidden name="bot-field" />        
             <fieldset className={styles.fieldset}>
-                <legend>email</legend>
+                <legend>Email</legend>
                 <input className={styles.input} type="email" name='email'  placeholder='name@name.com' required/>
             </fieldset>
 
                 <fieldset className={styles.fieldset}>
-                <legend>message</legend>
-                <textarea className={styles.textarea} placeholder='message...' name="textarea"   cols="30" rows="10"></textarea>
+                <legend>Message</legend>
+                <textarea className={styles.textarea} type="textarea" placeholder='message...' name="textarea"   cols="30" rows="10" required></textarea>
                 </fieldset>
 
                 <div className={styles.buttonContainer}>
-                <Button type='submit' rel="noopener noreferrer">Submit</Button>
+                <Button type='submit'>Submit</Button>
                 </div>
 
             </form>

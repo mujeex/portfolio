@@ -1,8 +1,11 @@
 import React,{useState} from 'react'
-import styles from '../components/pageStyles/contactStyles.module.css'
-import Layout from '../components/layout'
 import {graphql} from 'gatsby'
+
+import styles from '../components/pageStyles/contactStyles.module.css'
+import styleForm from '../components/contactComp/contactMe/contact.module.css'
+import Layout from '../components/layout'
 import WechatModal from '../components/contactComp/wechat'
+import Button from '../components/sharedComp/button/button'
 import EmailModal from '../components/contactComp/contactMe/contact'
 
 const contact=({data})=>{
@@ -27,13 +30,36 @@ const contact=({data})=>{
     <Layout>
          <div className={styles.contact_container}>
        { weChatmodal?<WechatModal imageFluid={image} wechatId={infos.wechatId} onToggle={toggleWeChatModal}/>:null}
-       {emailModal?<EmailModal onToggle={toggleEmailModal}/>:null}
+       {/* {emailModal?<EmailModal onToggle={toggleEmailModal}/>:null} */}
          <div className={styles.contact_content}>
             <h2>Hit me up if you ever have anything you want to talk about.</h2>
+            
+            <form name='contact'
+                 method='POST'
+                 data-netlify="true" 
+                 data-netlify-honeypot="bot-field"
+                 >
+
+             <input hidden name="bot-field" />        
+            <fieldset className={styleForm.fieldset}>
+                <legend>Email</legend>
+                <input className={styleForm.input} type="email" name='email'  placeholder='name@name.com' required/>
+            </fieldset>
+
+                <fieldset className={styleForm.fieldset}>
+                <legend>Message</legend>
+                <textarea className={styleForm.textarea} type="textarea" placeholder='message...' name="textarea"   cols="30" rows="10" required></textarea>
+                </fieldset>
+
+                <div className={styleForm.buttonContainer}>
+                <Button type='submit'>Submit</Button>
+                </div>
+
+            </form>
+
             <ul className={styles.contactLinks}>
             <li><a target='_blank' rel="noopener noreferrer" href={`${infos.githubLink}`}>Github</a></li>
             <li onClick={toggleWeChatModal}><a>Wechat</a></li>
-            <li onClick={toggleEmailModal}><a>Email</a></li>
             </ul>
          </div>
     </div>

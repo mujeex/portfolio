@@ -20,6 +20,12 @@
 .contact_content h2{
     opacity: .7
 }
+.contactLinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px
+}
 
 .contactLinks li{
     color:var(--secondary-color)
