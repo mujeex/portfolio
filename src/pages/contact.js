@@ -38,6 +38,7 @@ const contact=({data})=>{
                  method='POST'
                  data-netlify="true" 
                  data-netlify-honeypot="bot-field"
+                 action='/Thanks'
                  >
 
              <input hidden name="bot-field" />        
